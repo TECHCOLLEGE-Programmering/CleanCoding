@@ -32,7 +32,7 @@ namespace CleanCodeExersises
          */
         public bool IsLegalDrikingAgeClean(int age)
         {
-            const int legalDrinkingAge = 21;
+            const int legalDrinkingAge = 21; //use variable to describe numbers in your code.
             return age > legalDrinkingAge;
         }
         /*
@@ -53,12 +53,12 @@ namespace CleanCodeExersises
             }
         }
         /*
-         * Solution to ohm Intermediate exercise
-         * An intermediate Variable says a lot more them a long expression
+         * Solution to Intermediate exercise
+         * An intermediate Variable says a lot more them a long expression.
          */
         public bool eligibleClean(Employee employee)
         {
-            bool isEligibleForPension = employee.Age > 55
+            bool isEligibleForPension = employee.Age > 55 //Be clear about the information that is being conveyed.
                 && employee.YearsEmployed > 10
                 && employee.IsRetired;
             return isEligibleForPension;
@@ -84,7 +84,7 @@ namespace CleanCodeExersises
          */
         public bool IsLoggedInClean(bool loggedIn)
         {
-            if (loggedIn)
+            if (loggedIn) //don't use double negatives.
             {
                 System.Console.WriteLine("Succesfully logged in.");
                 return true;
@@ -121,7 +121,6 @@ namespace CleanCodeExersises
         /*
          * Strong type exersise - not done
          */
-
     }
 }
 
