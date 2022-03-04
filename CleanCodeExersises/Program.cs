@@ -80,9 +80,9 @@ namespace CleanCodeExersises
             }
         }
         /*
-         * Solution to Be positive exersise
+         * Solution to Be positive exersise version 1
          */
-        public bool IsLoggedInClean(bool loggedIn)
+        public bool IsLoggedInClean1(bool loggedIn)
         {
             if (loggedIn) //don't use double negatives.
             {
@@ -94,6 +94,14 @@ namespace CleanCodeExersises
                 System.Console.WriteLine("Failed to logged in.");
                 return false;
             }
+        }
+        /*
+         * Solution to Be positive exersise version 2
+         */
+        public bool IsLoggedInClean2(bool loggedIn)
+        {
+            System.Console.WriteLine(loggedIn ? "Succesfully logged in." : "Failed to logged in.");
+            return loggedIn;
         }
         /*
          * Ternary exersise
