@@ -53,14 +53,29 @@ namespace CleanCodeExersises
             }
         }
         /*
-         * Solution to Intermediate exercise
+         * Solution to Intermediate exercise version 1
          * An intermediate Variable says a lot more them a long expression.
          */
-        public bool eligibleClean(Employee employee)
+        public bool eligibleClean1(Employee employee)
         {
             bool isEligibleForPension = employee.Age > 55 //Be clear about the information that is being conveyed.
                 && employee.YearsEmployed > 10
                 && employee.IsRetired;
+            return isEligibleForPension;
+        }
+        /*
+         * Solution to Intermediate exercise version 2
+         * An intermediate Variable says a lot more them a long expression.
+         * With magic number solution
+         * Clean code is subjective and one thing might seam more readable for you, but a confusing for somebody else.
+         */
+        public bool eligibleClean2(Employee employee)
+        {
+            uint EligibleAge = 55;
+            uint EligibleYearsEmployed = 10;
+            bool isEligibleForPension = employee.Age > EligibleAge; //Be clear about the information that is being conveyed.
+            isEligibleForPension &= employee.YearsEmployed > EligibleYearsEmployed;
+            isEligibleForPension &= employee.IsRetired;
             return isEligibleForPension;
         }
         /*

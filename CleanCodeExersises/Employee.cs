@@ -6,8 +6,8 @@ namespace CleanCodeExersises
 {
     public class Employee
     {
-        public int Age;
-        public int YearsEmployed;
+        public uint Age;
+        public uint YearsEmployed;
         public bool IsRetired;
     }
 }
